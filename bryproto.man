@@ -1,0 +1,53 @@
+                             BRYPROTO MAN PAGE
+
+
+Syntax:   BRYPROTO NameOfDirectory
+
+Overview: BryProto accepts one parameter, the name of a directory, and
+          generates a file, FUNCTION.H, that declares all the functions
+          found in all *.C files in that directory.  If no parameter is
+          given, then BryProto checks the current directory.  Important
+          Note: BryProto accepts a directory name, not a file name.
+
+Limits:   BryProto will only generate function declarations, it will not
+          address such issues as include files, defines, structure
+          declarations, and global variables.
+
+          BryProto will only declare functions that adhere to the following
+          source code style:
+
+          ReturnType NameOfFunction(type Par1, type Par2, ... )
+          {
+               ...
+               BodyOfFunction
+          }
+
+          The other stylistic ways to define functions will cause that
+          function to not be declared.  For example, the following function
+          definition would not be declared in FUNCTION.H:
+
+          ReturnType NameOfFunction(type Par1, type Par2, ... )  {
+               ...
+               BodyOfFunction
+          }
+
+          Actually, this limitation is by design.  It allows some functions
+          to be hidden in the source code, and not globally declared in a
+          header.
+
+Bugs:     This is BryProto's initial release.  Please report all bugs and
+          suggestions via e-mail to BIX: donbryson or GEnie: D.BRYSON2.  If
+          you call me on the phone and disturb my programming, have your
+          VISA card ready.
+
+Warranty: This product carries a guarantee equivalent to the purchase price
+          of the product.  Absolutely none.
+
+                                 CopyRight
+
+BryProto and this user document is copyright 1992, Donald Bryson, 3421
+Elder Mountain Rd., Chattanooga, TN 37419, (615) 821-5757.  No payment is
+requested for its use.  However, all files must be included for its
+distribution in their un-modified form.
+
+
