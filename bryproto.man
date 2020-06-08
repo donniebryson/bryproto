@@ -43,7 +43,7 @@ Bugs:     This is BryProto's initial release.  Please report all bugs and
 Warranty: This product carries a guarantee equivalent to the purchase price
           of the product.  Absolutely none.
 
-                                 CopyRight
+                                 
 
 BryProto and this user document is copyright 1992, Donald Bryson, 3421
 Elder Mountain Rd., Chattanooga, TN 37419, (615) 821-5757.  No payment is
